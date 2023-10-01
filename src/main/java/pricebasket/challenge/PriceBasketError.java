@@ -25,7 +25,7 @@ public abstract class PriceBasketError {
 	}
 
 	public static class InternalError extends PriceBasketError {
-		public InternalError(final String message) {
+		private InternalError(final String message) {
 			super(message);
 		}
 
@@ -36,7 +36,7 @@ public abstract class PriceBasketError {
 	}
 
 	public static class InvalidBasketItem extends PriceBasketError {
-		public InvalidBasketItem(final String message) {
+		private InvalidBasketItem(final String message) {
 			super(message);
 		}
 
